@@ -1,0 +1,199 @@
+/*********************************/
+/**** UNIVERSAL STYLES *****/
+/*********************************/
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+  font-weight: lighter;
+}
+
+/*********************************/
+/**** HEADER *****/
+/*********************************/
+
+header {
+  background-color: #07889B;
+  color: #fff;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.05em;
+  text-transform: uppercase;
+}
+
+/*********************************/
+/**** BANNER TEXT *****/
+/*********************************/
+
+h2 {
+  text-align: center;
+  color: #153155;
+  font-size: 1.25em;
+  padding-top: 10px;
+}
+
+.banner p {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  opacity: .70;
+  color: #153133;
+  font-weight: 300;
+}
+
+.banner {
+  border-bottom: 5px solid #66b9bf;
+}
+
+/*********************************/
+/**** FORM *****/
+/*********************************/
+
+.form {
+    border-top: 2px solid #66B9BF;
+    margin: 4px auto;
+}
+
+legend {
+    color: #153133;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+fieldset {
+    border: none;
+}
+
+button {
+    background-color: #f2bd99;
+    color: #fef8f3;
+    padding: 15px 0;
+    width: 100%;
+    margin-top:20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+label {
+    color: #0f2b4e;
+    font-size: .8em;
+    opacity: .5;
+    margin-bottom: 12px;
+}
+
+.newsletter-container label {
+    display: inline-block;
+}
+
+.lbl {
+    margin-top: 15px;
+}
+.lft {
+    padding-left: 5px;
+}
+.contact input, select {
+    width: 100%;
+    height: 3.75em;
+}
+.contact label {
+    width: 100%;
+    margin: 10px auto;
+}
+#zip {
+    width: 40%;
+}
+input, select, textarea {
+    background-color: #def1f1;
+    border-radius: 4px;
+    font-size: .75em;
+    opacity: .7;
+    padding-left: 10px;
+    border: none;
+}
+input:focus {
+    border: 1px solid #07889B;
+    box-shadow: inset 0 0 4px #000;
+}
+input::placeholder {
+    opacity: .6;
+    font-style: italic;
+    text-align: right;
+    padding-right: 10px;
+}
+textarea {
+    padding-top: 10px;
+}
+textarea::placeholder {
+    opacity: .6;
+    font-style: italic;
+}
+#other-topics {
+    width: 100%;
+    height: 10em;
+}
+.container {
+    width: 92%;
+    margin: 0 auto;
+}
+.contact {
+    border-bottom: 2px solid #66B9BF;
+    padding: 0 0 25px 0;
+}
+.newsletter-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+footer {
+    text-align: center;
+    font-style: italic;
+    opacity: .2;
+    padding-bottom: 100px;
+}
+.info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*********************************/
+/**** FOOTER *****/
+/*********************************/
+
+footer {
+  text-align: center;
+  font-style: italic;
+  opacity: .2;
+  padding-bottom: 100px;
+}
+
+/*********************************/
+/**** MEDIA QUERY *****/
+/*********************************/
+@media (min-width: 768px) {
+    .container {
+        max-width: 850px;
+   }
+    .contact input, select {
+        flex-basis: 80%;
+   }
+    .contact label {
+        flex-basis: 20%;
+   }
+    .info {
+        margin: 20px auto;
+   }
+    #zip-label {
+        margin: 0;
+        padding-top: 10px;
+   }
+    #zip {
+        flex-basis: 30%;
+   }
+}
